@@ -65,73 +65,81 @@
     <!--main container-->
     <main class="m-3">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex width-auto">
                 <!--first column-->
 
-                <div class="col-lg-8 col-md-12">
+                <div class="col-lg-8 mx-auto col-md-12">
 
                     <!--first column main title-->
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h1>Nuovo Libro</h1>
+                    <div class="d-flex align-items-center">
+                        <h1 class="mb-4 fs-3">Nuovo Libro</h1>
 
                         <!-- <button class="btn btn-primary me-md-2" type="button">Aggiungi
                             Libro</button> -->
                         <!-- <a class="btn btn-primary" href="addbook.html" role="button">Aggiungi Libro</a> -->
                     </div>
                     <form class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <label for="first name" class="form-label">Nome Autore</label>
-                            <input type="text" class="form-control" placeholder="inserisci il nome dell'autore"
+                            <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
                                 aria-label="First name">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <label for="last name" class="form-label">Cognome Autore</label>
-                            <input type="text" class="form-control" placeholder="inserisci il cognome dell'autore"
+                            <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
                                 aria-label="First name">
                         </div>
                         <div class="col-12">
                             <label for="title" class="form-label">Titolo</label>
                             <input type="text" class="form-control" id="title" placeholder="Inserisci titolo del libro">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Titolo versione italiana
+                            </div>
                         </div>
-                       <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Genere</label>
                             <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
+                                <option selected>Scegli il genere</option>
+                                <option>Romanzo</option>
+                                <option>Fantasy</option>
+                                <option>Avventura e Azione</option>
+                                <option>Thriller</option>
+                                <option>Altro..</option>
                             </select>
                         </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                        <div class="col-md-4">
+                            <label for="pubdate" class="form-label">Anno di Pubblicazione</label>
+                            <input type="number" class="form-control" placeholder="Inserisci l'anno" id="pubdate">
                         </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                        <div class="col-md-4 pb-3">
+                            <label for="inputCity" class="form-label">ISBN#</label>
+                            <input type="number" class="form-control" placeholder="Inserisci codice ISBN#"
+                                id="isbncode">
                         </div>
+
+                        <hr>
+
+                        <div class="mb-2 mt-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                            <textarea class="form-control" id="note" placeholder="inserisci eventuali note sul libro"
+                                rows="3"></textarea>
+                        </div>
+
+
                         <div class="col-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
-                                    Check me out
+                                    Disponibile anche in digitale
                                 </label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
                         </div>
                     </form>
                 </div>
-
-
-
-
-                <!--second column-features -->
-
-                <div class="col-lg-4">
-
-                </div>
-
             </div>
         </div>
 
